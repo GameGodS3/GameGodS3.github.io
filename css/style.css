@@ -428,12 +428,29 @@ body {
   right: 10%;
   top: 15%;
 }
-
 .smallcircle {
   width: 16vw;
   height: 16vw;
   left: 12%;
-  bottom: 30%;
+  top: 30%;
+}
+.mediumcircle {
+  width: 24vw;
+  height: 24vw;
+  right: 12%;
+  top: 45%;
+}
+.smallcircle2 {
+  width: 16vw;
+  height: 16vw;
+  left: 12%;
+  top: 60%;
+}
+.mediumcircle2 {
+  width: 24vw;
+  height: 24vw;
+  right: 12%;
+  bottom: 10%;
 }
 
 .about {
@@ -568,6 +585,39 @@ thicc {
   width: 100%;
 }
 
+.we-container {
+  background-color: #e6eaf20c;
+  border-radius: 10px;
+  display: block;
+  padding: 8px 20px;
+  margin: 16px 0;
+  color: var(--sec);
+  text-decoration: none;
+}
+.we-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.we-company-position {
+  flex-grow: 2;
+}
+.we-company {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c6d6d;
+}
+.we-position {
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--sec);
+}
+.we-details {
+  font-size: 14px;
+  height: 100%;
+  opacity: 0.6;
+}
+
 .club-list {
   font-weight: lighter;
   list-style: url("https://api.iconify.design/akar-icons:chevron-right.svg?color=%232c6d6d");
@@ -638,5 +688,14 @@ thicc {
   }
   .gitcard {
     max-width: 100%;
+  }
+
+  .we-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .we-description ul li {
+    margin: 8px 0;
   }
 }
