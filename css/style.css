@@ -618,6 +618,42 @@ thicc {
   opacity: 0.6;
 }
 
+.achieve-container {
+  background-color: #e6eaf20c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  color: var(--sec);
+  text-decoration: none;
+}
+.achieve-details {
+  flex-grow: 2;
+}
+.achieve-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 0;
+  color: #2c6d6d;
+}
+.achieve-provider {
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--sec);
+}
+.achieve-description {
+  padding: 8px 0;
+  max-width: 90%;
+  line-height: 1.2rem;
+}
+.achieve-img {
+  padding: 4px;
+}
+.achieve-img img {
+  max-width: 120px;
+}
+
 .club-list {
   font-weight: lighter;
   list-style: url("https://api.iconify.design/akar-icons:chevron-right.svg?color=%232c6d6d");
@@ -697,5 +733,12 @@ thicc {
   }
   .we-description ul li {
     margin: 8px 0;
+  }
+
+  .achieve-container {
+    flex-direction: column;
+  }
+  .achieve-img img {
+    max-width: 100%;
   }
 }
