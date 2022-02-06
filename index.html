@@ -460,6 +460,12 @@
       };
     }
 
+    // Work Experience elements
+    const we_container = document.querySelector(".we-container");
+
+    // Achievements elements
+    const achieve_container = document.querySelector(".achieve-container");
+
     // Club elements
     const club_container = document.querySelector(".club-list");
     const clubs = document.querySelectorAll(".club-list li");
@@ -521,6 +527,16 @@
             element.classList.add("settle");
           }, index * 100);
         });
+      }
+      if (we_container.getBoundingClientRect().top < screenheight * 0.75) {
+          setTimeout(() => {
+            we_container.classList.add("settle");
+          }, 100);
+      }
+      if (achieve_container.getBoundingClientRect().top < screenheight * 0.75) {
+          setTimeout(() => {
+            achieve_container.classList.add("settle");
+          }, 100);
       }
     }
   </script>

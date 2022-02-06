@@ -593,6 +593,7 @@ thicc {
   margin: 16px 0;
   color: var(--sec);
   text-decoration: none;
+  opacity: 0; /*for animation*/
 }
 .we-title {
   display: flex;
@@ -627,6 +628,7 @@ thicc {
   padding: 8px 20px;
   color: var(--sec);
   text-decoration: none;
+  opacity: 0; /*for animation*/
 }
 .achieve-details {
   flex-grow: 2;
