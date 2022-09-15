@@ -6,26 +6,32 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 html {
   overflow-y: hidden;
 }
+
 /*Custom scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: var(--pri);
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #e6eaf22d;
   width: 6px;
   transition: all 0.5s;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--sec);
   transition: all 0.5s;
 }
+
 /*Font vars*/
 @font-face {
   font-family: "Montserrat";
@@ -33,12 +39,14 @@ html {
   font-weight: 500;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Light.ttf");
   font-weight: 300;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.ttf");
@@ -52,39 +60,47 @@ html {
     margin-top: 20px;
     opacity: 0;
   }
+
   to {
     margin-top: 0;
     opacity: 1;
   }
 }
+
 @keyframes settle {
   from {
     transform: translate(15px);
     opacity: 0;
   }
+
   to {
     transform: translate(0);
     opacity: 1;
   }
 }
+
 @keyframes softpop {
   from {
     transform: scale(0.8);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 #ascend {
   animation: ascend 0.5s forwards;
   animation-delay: 0.5s;
 }
+
 #softpop {
   animation: softpop 0.5s forwards;
   animation-delay: 1s;
 }
+
 .settle {
   animation: settle 0.5s forwards;
 }
@@ -94,20 +110,25 @@ html {
   0% {
     transform: rotate(45deg);
   }
+
   50% {
     transform: rotate(225deg);
   }
+
   100% {
     transform: rotate(405deg);
   }
 }
+
 @keyframes load-bar {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0);
   }
@@ -124,6 +145,7 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .loading {
   display: block;
   width: 60px;
@@ -132,6 +154,7 @@ html {
   border: 5px solid var(--sec);
   animation: load-shell infinite 2s;
 }
+
 .loadingbar {
   display: block;
   width: 60px;
@@ -148,21 +171,25 @@ html {
     filter: drop-shadow(5px 5px 10px #000000a1);
     transition: all 0.25s;
   }
+
   .cta:hover {
     background-color: #112b2b;
     box-shadow: #000000c5 8px 8px 5px;
     transition: all 0.25s;
   }
+
   .social-icon:hover {
     background-color: #e6eaf2ef;
     opacity: 1;
     transition: 0.25s;
   }
+
   .email:hover {
     background-color: #e6eaf211;
     opacity: 1;
     transition: 0.25s;
   }
+
   .gitcard:hover {
     background-color: #112b2b5d;
     box-shadow: #00000077 8px 8px 5px;
@@ -179,6 +206,7 @@ body {
   background-color: var(--pri);
   font-family: "Montserrat";
 }
+
 .scrolltotop {
   font-weight: normal;
   font-size: 30px;
@@ -197,20 +225,24 @@ body {
   bottom: 5vh;
   display: none;
 }
+
 .scrolltotop:hover {
   background-color: #112b2b;
   box-shadow: #000000c5 8px 8px 5px;
   transition: all 0.25s;
 }
+
 .scrolltotop:active {
   background-color: #0d2323;
   box-shadow: #000000c5 1px 1px 5px;
   transition: all 0.1s;
 }
+
 .contact-sidebar {
   margin-top: 20px;
   opacity: 0;
 }
+
 .social-icons-container {
   display: flex;
   position: fixed;
@@ -219,8 +251,7 @@ body {
   bottom: 10vh;
   flex-direction: column;
   width: fit-content;
-  filter: invert(94%) sepia(29%) saturate(344%) hue-rotate(177deg)
-    brightness(95%) contrast(100%);
+  filter: invert(94%) sepia(29%) saturate(344%) hue-rotate(177deg) brightness(95%) contrast(100%);
 }
 
 .social-icon {
@@ -270,6 +301,7 @@ body {
   width: 100%;
   bottom: 0;
 }
+
 /*Wave 1 Left peak*/
 .custom-shape-divider-bottom-1609432401 {
   position: absolute;
@@ -354,6 +386,7 @@ body {
 .dp:active {
   filter: drop-shadow(#000000a1 2px 2px 5px);
 }
+
 .name {
   font-size: 36px;
   font-family: "Montserrat";
@@ -428,24 +461,28 @@ body {
   right: 10%;
   top: 15%;
 }
+
 .smallcircle {
   width: 16vw;
   height: 16vw;
   left: 12%;
   top: 30%;
 }
+
 .mediumcircle {
   width: 24vw;
   height: 24vw;
   right: 12%;
   top: 45%;
 }
+
 .smallcircle2 {
   width: 16vw;
   height: 16vw;
   left: 12%;
   top: 60%;
 }
+
 .mediumcircle2 {
   width: 24vw;
   height: 24vw;
@@ -472,6 +509,7 @@ body {
   padding: 10px 20px;
   margin: 1.5rem 0 0 0;
 }
+
 .section-sub {
   font-weight: lighter;
   font-size: 14px;
@@ -500,6 +538,7 @@ thicc {
   display: flex;
   flex-wrap: wrap;
 }
+
 .techstack {
   background-color: #e6eaf20c;
   margin: 10px;
@@ -512,13 +551,16 @@ thicc {
   opacity: 0;
   transform: translate(15px);
 }
+
 .techstack img {
   max-width: 2rem;
   padding: 0 4px;
 }
+
 .techstack svg {
   padding: 4px;
 }
+
 .techstack-text {
   font-weight: lighter;
   font-size: 1rem;
@@ -532,7 +574,6 @@ thicc {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto, 1fr);
-  gap: 8px;
 }
 
 .gitcard {
@@ -542,6 +583,7 @@ thicc {
   align-items: center;
   background-color: #1533335d;
   padding: 8px 20px;
+  margin: 8px;
   border-radius: 15px;
   box-shadow: #00000062 5px 5px 50px;
 
@@ -549,6 +591,7 @@ thicc {
   opacity: 0;
   transform: translate(15px);
 }
+
 .gitcard:active {
   background-color: #0d23235d;
   box-shadow: #00000062 1px 1px 5px;
@@ -560,22 +603,26 @@ thicc {
   line-height: 1.5rem;
   color: var(--sec);
 }
+
 .projdesc {
   font-weight: lighter;
   font-size: 0.9rem;
   opacity: 0.7;
 }
+
 .projimg {
   height: 100%;
   display: flex;
   align-items: center;
   padding-bottom: 4px;
 }
+
 .projimg img {
   max-height: 12rem;
   max-width: 100%;
   border-radius: 10px;
 }
+
 .projtech {
   padding: 4px 0;
   display: flex;
@@ -593,26 +640,32 @@ thicc {
   margin: 16px 0;
   color: var(--sec);
   text-decoration: none;
-  opacity: 0; /*for animation*/
+  opacity: 0;
+  /*for animation*/
 }
+
 .we-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .we-company-position {
   flex-grow: 2;
 }
+
 .we-company {
   font-size: 20px;
   font-weight: 700;
   color: #2c6d6d;
 }
+
 .we-position {
   font-size: 14px;
   font-weight: lighter;
   color: var(--sec);
 }
+
 .we-details {
   font-size: 14px;
   height: 100%;
@@ -628,30 +681,37 @@ thicc {
   padding: 8px 20px;
   color: var(--sec);
   text-decoration: none;
-  opacity: 0; /*for animation*/
+  opacity: 0;
+  /*for animation*/
 }
+
 .achieve-details {
   flex-grow: 2;
 }
+
 .achieve-title {
   font-size: 20px;
   font-weight: 700;
   padding: 8px 0;
   color: #2c6d6d;
 }
+
 .achieve-provider {
   font-size: 14px;
   font-weight: lighter;
   color: var(--sec);
 }
+
 .achieve-description {
   padding: 8px 0;
   max-width: 90%;
   line-height: 1.2rem;
 }
+
 .achieve-img {
   padding: 4px;
 }
+
 .achieve-img img {
   max-width: 120px;
 }
@@ -661,6 +721,7 @@ thicc {
   list-style: url("https://api.iconify.design/akar-icons:chevron-right.svg?color=%232c6d6d");
   line-height: 2rem;
 }
+
 .club-list li {
   /* for animation */
   opacity: 0;
@@ -672,6 +733,7 @@ thicc {
     width: calc(100% + 1.3px);
     height: 95px;
   }
+
   .custom-shape-divider-bottom-1609432724 svg {
     width: calc(140% + 1.3px);
     height: 110px;
@@ -680,18 +742,22 @@ thicc {
   .contact-sidebar {
     display: none;
   }
+
   .social-icons-container {
     position: static;
     flex-direction: row;
   }
+
   .social-icon {
     opacity: 0;
   }
+
   .email {
     position: static;
     transform: none;
     opacity: 0;
   }
+
   .contact-mobile {
     display: flex;
     flex-direction: column;
@@ -703,19 +769,24 @@ thicc {
     width: 80%;
     background-color: #e6eaf208;
   }
+
   .dp {
     width: 200px;
     height: 200px;
   }
+
   .largecircle {
     transform: scale(3);
   }
+
   .smallcircle {
     transform: scale(4);
   }
+
   #about-me {
     padding: 5% 5%;
   }
+
   .emphasis {
     font-size: 2.2rem;
   }
@@ -724,23 +795,41 @@ thicc {
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
   }
+
   .gitcard {
     max-width: 100%;
+    margin: 0;
+  }
+
+  .projdesc {
+    line-height: 1.2rem;
   }
 
   .we-title {
+    padding: 8px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .we-description ul {
+    padding: 0;
+    list-style: none;
+  }
+
   .we-description ul li {
-    margin: 8px 0;
+    line-height: 1.3rem;
+    margin: 16px 0;
   }
 
   .achieve-container {
     flex-direction: column;
+    padding: 8px 20px;
+    line-height: 1.3rem;
   }
+
   .achieve-img img {
     max-width: 100%;
+    margin: 16px 0;
   }
 }
